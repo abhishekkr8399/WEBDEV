@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        h2 {background-color:rgba(17, 249, 249, 0.719);}
+        h2 {color: rgb(244, 11, 19);}
+    </style>
+</head>
+<body bgcolor="black" text="white">
+    <h2 >THIS IS FORM IN HTML</h2>
+    <form action="backend.php">
+        <div>
+            <label for="name"> Name :*</label>
+            <input type="text" name="myName" id="name" required>
+        </div>
+        <br>
+        <div>
+            <label for="role"> Role :</label>
+            <input type="text" name="myRole" id="role">
+        </div>
+        <br>
+        <div>
+            <label for="email">Email :*</label>
+            <input type="email" name="myEmail" id="email" required>
+        </div>
+        <br>
+        <div>
+            <label for="age">AGE :*</label>
+            <input type="number" name="age" id="age"min="1" max="150" step="5" value="4" required>
+        </div>
+        <br>
+        <div>
+            <label for="date">Birthdate :*</label>
+            <input type="date" name="myDate" id="date"min="1947-09-22" max="2022-09-22" required>
+        </div>
+        <br>
+        <div>
+            <label for="dt"> DATETIME :</label>
+            <input type="datetime" name="myName" id="dt" >
+        </div>
+        <br>
+        <div>
+            <label for="t"> TIME :</label>
+            <input type="time" name="myName" id="t" >
+        </div>
+        <br>
+        <div>
+            <form oninput="x.value=parsInt(a.value)+parsInt(b.value)">
+            <!-- <label for="a"> range :</label> -->
+            <input type="range" name="myName" id="a" >+<input tHype="number" id="b" value="25">=<output name="x" for="a b"></output></form>
+        </div>
+        <br>
+        <div>
+            <label for="wk"> WEEK :</label>
+            <input type="week" name="myName" id="wk" >
+        </div>
+        <br>
+        <div>
+            <label for="search"> SEARCH :</label>
+            <input type="search" name="myName" id="search" >
+        </div>
+        <br>
+        <div>
+            <label for="TEL"> TEL :</label>
+            <input type="tel" name="myName" id="dTEL" >
+        </div>
+        <br>
+        <div>
+            <label for="ldt"> LOCALDATETIME :</label>
+            <input type="datetime-local" name="myName" id="ldt" >
+        </div>
+        <br>
+        <div>
+            <label for="mt"> MONTH :</label>
+            <input type="month" name="myName" id="mt" >
+        </div>
+        <br>
+        <div>
+            <label for="bonus"> Bonus :</label>
+            <input type="number" name="myNumber" id="bonus">
+        </div>
+        <br>
+        <div>
+            <label for="file"> File :</label>
+            <input type="file" name="file" id="file">
+        </div>
+        <br>
+        <div>
+            <label for="phone"> Phone :*</label>
+            <input type="tel" name="phone" id="phone" required>
+        </div>
+        <br>
+        <div>
+            <label for="url"> URL :</label>
+            <input type="url" name="url" id="url">
+        </div>
+        <br>
+        <div>
+            <label for="color"> Color :</label>
+            <input type="color" name="color" id="color">
+        </div>
+        <br>
+        <div>
+            <label>
+                Password :*
+                <input type="password" name=""password required>
+            </label>
+        </div>
+        <br>
+        <div>
+            <label for="car">Car :</label>
+            <select name="myCar" id="car" >
+                <option value="indica">INDICA</option>
+                <option value="swift">SWIFT</option>
+                <option value="tiago"selected>TIAGO</option>
+            </select>
+        </div>
+        <br>
+        <div>
+        <label for="eligible">Eligible :</label>
+            <input type="checkbox" name="myEligibility" checked id="eligible" >
+        </div>
+            <br>
+            <fieldset>
+                <legend>
+            <label for="gender"> Gender :*</label></legend><p>
+            Male<input type="radio" name="myGender"  required>
+            Female<input type="radio" name="myGender" checked required>
+            Other<input type="radio" name="myGender" required>
+        </p>
+        </fieldset>
+        <br>
+        <div>
+            <label for="myText">Tell About Yourself :</label>
+         <br><br> <textarea name="myText" id="" cols="100" rows="10"></textarea>
+        </div>
+        <br>
+        <input list="browser">
+        <datalist id="browser">
+            <option value="qwe">
+            <option value="qee">
+            <option value="qqe">
+        </datalist>
+        
+
+        <div>
+            <input type="submit" value="Submit Now">
+            <input type="reset" value="Reset Now">
+        </div>
+        </form>
+</body>
+</html>
